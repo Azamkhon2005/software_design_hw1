@@ -1,7 +1,11 @@
-# software_design_hw1
-# Принципы SOLID
+# ERP система московского зоопарка
+## DI контейнер
+DI контейнер находится в статичном классе DIConfig
 
-## 1. Single Responsibility Principle (SRP):
+p.s Для работы контейнера необходимо установить расширение Microsoft.Extensions.DependencyInjection.
+## Принципы SOLID
+
+### 1. Single Responsibility Principle (SRP):
 
 Классы Animal, Herbo, Predator, Monkey, Rabbit, Tiger, Wolf:
 
@@ -19,7 +23,7 @@
 
 Этот класс отвечает за проверку здоровья животных. Он соответствует SRP, так как его задача — проверка состояния здоровья.
 
-## 2. Open/Closed Principle (OCP):
+### 2. Open/Closed Principle (OCP):
 Классы должны быть открыты для расширения, но закрыты для модификации.
 
 Классы Animal, Herbo, Predator:
@@ -34,7 +38,7 @@
 
 Эти интерфейсы позволяют добавлять новые реализации без изменения существующего кода, что соответствует OCP.
 
-## 3. Liskov Substitution Principle (LSP) 
+### 3. Liskov Substitution Principle (LSP) 
 Классы Monkey, Rabbit, Tiger, Wolf:
 
 Эти классы наследуются от Herbo и Predator, и они корректно переопределяют методы и свойства базовых классов. Они могут быть использованы вместо базовых классов без нарушения работы программы. Это соответствует LSP.
@@ -43,13 +47,13 @@
 
 Этот класс работает с интерфейсом IAlive, что позволяет использовать любые классы, реализующие этот интерфейс, без нарушения работы программы. Это соответствует LSP.
 
-## 4. Interface Segregation Principle (ISP)
+### 4. Interface Segregation Principle (ISP)
 
 Интерфейсы IAlive, IInventory, IClinic:
 
 Эти интерфейсы достаточно узкие и специфичные, что соответствует ISP. Например, IAlive содержит только методы, связанные с жизнью животного, а IInventory — только с инвентарем.
 
-## 5. Dependency Inversion Principle (DIP)
+### 5. Dependency Inversion Principle (DIP)
 
 Класс Zoo:
 

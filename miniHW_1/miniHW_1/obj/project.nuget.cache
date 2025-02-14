@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "X3U3Vbc4rLJst44rA2Ux6F7XPv/elw+yRSTctVKTOQEipN2HKwfjNmDceO+g6GcOgIYQ7+X6ENjAOFn7D/MT1w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\abuzu\\source\\repos\\miniHW_1\\miniHW_1\\miniHW_1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\abuzu\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\9.0.2\\microsoft.extensions.dependencyinjection.9.0.2.nupkg.sha512",
+    "C:\\Users\\abuzu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\9.0.2\\microsoft.extensions.dependencyinjection.abstractions.9.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
